@@ -36,7 +36,7 @@ app.post('/login',async(req,res)=>{
 app.get('/',async (req,res)=>{
     try {
         const dbUsers = await MandirDb.find({})
-        res.status(200).send('Hello mandir'+ dbUsers)
+        res.status(200).send('Hello this is mandir backend by Mbs')
     } catch (error) {
         res.status(401).send(error)
     }
